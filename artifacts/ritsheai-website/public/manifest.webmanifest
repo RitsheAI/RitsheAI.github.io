@@ -1,0 +1,10 @@
+{
+  "name": "RitsheAI",
+  "short_name": "RitsheAI",
+  "description": "AI, software, developer tools, and open-source experiments by Ritesh Pandey.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f3ee",
+  "theme_color": "#172d4d",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
