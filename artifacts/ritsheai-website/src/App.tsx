@@ -10,7 +10,31 @@ import {
   Github, Mail, Menu, Moon, Search, Send, Sun, Terminal,
   Workflow, X, Zap,
 } from 'lucide-react';
+import {
+  SiGithub,
+  SiX,
+  SiInstagram,
+  SiFacebook,
+  SiThreads,
+  SiTelegram,
+  SiYoutube,
+  SiPinterest,
+} from 'react-icons/si';
+import { FaLinkedin } from 'react-icons/fa6';
 import { buildAreas, nowItems, posts, projects, tools } from '@/data/portfolio';
+
+const socialLinks = [
+  { name: 'GitHub', label: 'github.com/ritsheai', url: 'https://github.com/ritsheai', icon: SiGithub },
+  { name: '𝕏 (Twitter)', label: 'x.com/ritsheai', url: 'https://x.com/ritsheai', icon: SiX },
+  { name: 'Instagram', label: 'instagram.com/ritsheai', url: 'https://instagram.com/ritsheai', icon: SiInstagram },
+  { name: 'Facebook', label: 'facebook.com/ritsheai', url: 'https://facebook.com/ritsheai', icon: SiFacebook },
+  { name: 'Threads', label: 'threads.net/@ritsheai', url: 'https://threads.net/@ritsheai', icon: SiThreads },
+  { name: 'Telegram', label: 't.me/ritsheai', url: 'https://t.me/ritsheai', icon: SiTelegram },
+  { name: 'YouTube', label: 'youtube.com/@ritsheai', url: 'https://youtube.com/@ritsheai', icon: SiYoutube },
+  { name: 'Pinterest', label: 'pinterest.com/ritsheai', url: 'https://pinterest.com/ritsheai', icon: SiPinterest },
+  { name: 'LinkedIn', label: 'linkedin.com/in/ritsheai', url: 'https://linkedin.com/in/ritsheai', icon: FaLinkedin },
+  { name: 'Email', label: 'hello@ritsheai.dev', url: 'mailto:hello@ritsheai.dev', icon: Mail },
+];
 
 const queryClient = new QueryClient();
 
@@ -134,12 +158,22 @@ function Home() {
         <section className="section philosophy reveal"><div className="wrap phil-grid"><p className="phil-quote">“Stay close to the <span>question.</span> Let the output surprise you.”</p><p className="phil-aside">The best work starts before the answer is obvious. RitsheAI is a practice of staying with that productive uncertainty long enough to find something honest.</p></div></section>
 
         <section id="contact" className="section wrap reveal"><div className="contact-grid"><div><div className="eyebrow">09 / Open channel</div><h2 className="contact-title">Bring a<br />good question.</h2><p className="contact-copy">Have a strange problem, an early idea, or a useful rabbit hole? Send a note. This form validates locally and does not send email yet.</p><div className="contact-links">
-  <a href="mailto:hello@ritsheai.dev" data-testid="link-email"><Mail size={14} /> hello@ritsheai.dev</a>
-  <a href="https://github.com/ritsheai" target="_blank" rel="noreferrer" data-testid="link-contact-github"><Github size={14} /> github.com/ritsheai</a>
-  <a href="https://x.com/ritsheai" target="_blank" rel="noreferrer" data-testid="link-contact-x"><span className="mono">𝕏</span> x.com/ritsheai</a>
-  <a href="https://linkedin.com/in/ritsheai" target="_blank" rel="noreferrer" data-testid="link-contact-linkedin"><span className="mono">in</span> linkedin.com/in/ritsheai</a>
-  <a href="https://youtube.com/@ritsheai" target="_blank" rel="noreferrer" data-testid="link-contact-youtube"><span className="mono">▶</span> youtube.com/@ritsheai</a>
-  <a href="https://instagram.com/ritsheai" target="_blank" rel="noreferrer" data-testid="link-contact-instagram"><span className="mono">📷</span> instagram.com/ritsheai</a>
+  {socialLinks.map((item) => {
+    const Icon = item.icon;
+    return (
+      <a
+        key={item.name}
+        href={item.url}
+        target={item.url.startsWith('mailto:') ? undefined : '_blank'}
+        rel={item.url.startsWith('mailto:') ? undefined : 'noreferrer'}
+        className="social-pill"
+        data-testid={`link-social-${item.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
+      >
+        <Icon />
+        <span>{item.name}</span>
+      </a>
+    );
+  })}
 </div></div><form ref={formRef} className="contact-form" onSubmit={submitContact} noValidate><div className="field"><label htmlFor="name">Your name</label><input id="name" name="name" required placeholder="Ritesh's next collaborator" data-testid="input-contact-name" /></div><div className="field"><label htmlFor="email">Email address</label><input id="email" name="email" type="email" required placeholder="you@somewhere.good" data-testid="input-contact-email" /></div><div className="field"><label htmlFor="message">The question</label><textarea id="message" name="message" required placeholder="What are you working on?" data-testid="input-contact-message" /></div><div className="form-foot"><span className="form-error" role="alert">{formError}</span><button className="button button-dark" type="submit" data-testid="button-contact-submit">Validate note <Send size={15} /></button></div>{sent && <div className="form-success" role="status"><Check size={14} /> Note validated locally. No email was sent — connect a mail service when you are ready.</div>}</form></div></section>
       </main>
       <footer className="footer wrap"><span>© {new Date().getFullYear()} RitsheAI / made by Ritesh Pandey</span><span>AI · software · experiments · <a href="#top" data-testid="link-footer-top">back to top</a></span></footer>

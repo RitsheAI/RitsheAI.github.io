@@ -20,14 +20,26 @@
   <a href="https://x.com/ritsheai">
     <img src="https://img.shields.io/badge/X-@ritsheai-000000?style=for-the-badge&logo=x&logoColor=white" alt="X / Twitter" />
   </a>
-  <a href="https://linkedin.com/in/ritsheai">
-    <img src="https://img.shields.io/badge/LinkedIn-ritsheai-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  <a href="https://instagram.com/ritsheai">
+    <img src="https://img.shields.io/badge/Instagram-@ritsheai-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+  <a href="https://facebook.com/ritsheai">
+    <img src="https://img.shields.io/badge/Facebook-ritsheai-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
+  </a>
+  <a href="https://threads.net/@ritsheai">
+    <img src="https://img.shields.io/badge/Threads-@ritsheai-000000?style=for-the-badge&logo=threads&logoColor=white" alt="Threads" />
+  </a>
+  <a href="https://t.me/ritsheai">
+    <img src="https://img.shields.io/badge/Telegram-@ritsheai-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
   </a>
   <a href="https://youtube.com/@ritsheai">
     <img src="https://img.shields.io/badge/YouTube-@ritsheai-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" />
   </a>
-  <a href="https://instagram.com/ritsheai">
-    <img src="https://img.shields.io/badge/Instagram-@ritsheai-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  <a href="https://pinterest.com/ritsheai">
+    <img src="https://img.shields.io/badge/Pinterest-ritsheai-BD081C?style=for-the-badge&logo=pinterest&logoColor=white" alt="Pinterest" />
+  </a>
+  <a href="https://linkedin.com/in/ritsheai">
+    <img src="https://img.shields.io/badge/LinkedIn-ritsheai-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:hello@ritsheai.dev">
     <img src="https://img.shields.io/badge/Email-hello@ritsheai.dev-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
@@ -142,9 +154,13 @@
 | 🌐 **Portfolio Website** | [ritsheai.github.io](https://ritsheai.github.io/) |
 | 🐙 **GitHub** | [@ritsheai](https://github.com/ritsheai) |
 | 𝕏 **X (Twitter)** | [@ritsheai](https://x.com/ritsheai) |
-| 💼 **LinkedIn** | [in/ritsheai](https://linkedin.com/in/ritsheai) |
-| 📺 **YouTube** | [@ritsheai](https://youtube.com/@ritsheai) |
 | 📸 **Instagram** | [@ritsheai](https://instagram.com/ritsheai) |
+| 📘 **Facebook** | [facebook.com/ritsheai](https://facebook.com/ritsheai) |
+| 🧵 **Threads** | [@ritsheai](https://threads.net/@ritsheai) |
+| ✈️ **Telegram** | [@ritsheai](https://t.me/ritsheai) |
+| 📺 **YouTube** | [@ritsheai](https://youtube.com/@ritsheai) |
+| 📌 **Pinterest** | [pinterest.com/ritsheai](https://pinterest.com/ritsheai) |
+| 💼 **LinkedIn** | [in/ritsheai](https://linkedin.com/in/ritsheai) |
 | ✉️ **Email** | [hello@ritsheai.dev](mailto:hello@ritsheai.dev) |
 
 <br/>
