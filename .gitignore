@@ -47,5 +47,7 @@ Thumbs.db
 # Cache & local overrides
 .cache/
 .local/
+.conversation/
 .env.local
 .env.*.local
+
